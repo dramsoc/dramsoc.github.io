@@ -1,0 +1,285 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>ICU DramSoc</title>
+        <meta name="description" content="Imperial College Union Dramatic Society">
+        
+		<link rel="icon" href="images/logos/dramsoc.jpeg">
+		<link rel="apple-touch-icon" href="images/logos/dramsoc.jpeg">
+        <meta name="viewport" content="width=device-width, viewport-fit=cover">
+        <meta property="og:image" content="images/banners/get_in.jpeg">
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:700,400,400italic">
+        <link rel="stylesheet" href="style.css">
+        
+        <script src="https://www.youtube.com/player_api"></script>
+        <script defer src="script.js"></script>
+
+        <!-- GOOGLE ANALYTICS -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8EMSMM17Z4"></script>
+        <script>
+            window.dataLayer = window.dataLayer || []
+            function gtag() { dataLayer.push(arguments) }
+            gtag('js', new Date())
+            gtag('config', 'G-8EMSMM17Z4')
+        </script>
+    </head>
+    <body>
+        <!-- NAVIGATION -->
+        <div id="nav">
+            <div id="nav_bar" class="wide_content">
+                <button type="button" title="Toggle Navigation Links" id="nav_menu" class="nav_button" onclick="toggle_nav_links()">
+                    <img aria-hidden="true" id="nav_menu_img" class="symbol" src="/images/symbols/line.3.horizontal.png">
+                </button>
+                <button type="button" class="nav_button" onclick="scroll_to('intro')">
+                    <h3><span class="light">ICU</span> DramSoc</h3>
+                </button>
+                <button type="button" title="Toggle Video Sound" class="nav_button" onclick="toggle_mute()">
+                    <img aria-hidden="true" class="symbol" id="mute_button_img" src="/images/symbols/speaker.slash.fill.png">
+                </button>
+            </div>
+            <span id="nav_links" class="content_row">
+                <button type="button" class="nav_button" onclick="scroll_to('about')">
+                    <h4>About</h4>
+                </buttona>
+                <button type="button" class="nav_button" onclick="scroll_to('acting')">
+                    <h4>Acting</h4>
+                </button>
+                <button type="button" class="nav_button" onclick="scroll_to('tech')">
+                    <h4>Tech</h4>
+                </button>
+                <button type="button" class="nav_button" onclick="scroll_to('services')">
+                    <h4>Services</h4>
+                </button>
+                <button type="button" class="nav_button" onclick="scroll_to('committee')">
+                    <h4>Committee</h4>
+                </button>
+                <button type="button" class="nav_button" onclick="scroll_to('contact')">
+                    <h4>Contact</h4>
+                </button>
+                <a class="nav_button" href="/tickets" target="_blank">
+                    <h4>Tickets</h4>
+                </a>
+            </span>
+        </div>
+
+        <!-- PLAYER -->
+        <div id="intro">
+            <div id="player"></div>
+            <button type="button" aria-hidden="true" id="down_button" onclick="scroll_to('about')">
+                <img aria-hidden="true" id="down_button_img" class="invert" src="images/symbols/chevron.down.png">
+            </button>
+        </div>
+
+        <!-- FEATURE -->
+        <!-- <div id="feature"></div> -->
+
+        <!-- ABOUT -->
+        <div id="about" class="section">
+            <div class="section_content">
+                <h1>Welcome to DramSoc! An Imperial College London society where we do everything and anything</h1>
+                <p>We have people doing everything from acting, directing and choreography to set building, lighting and costume design, all of which you can get involved in.</p>
+                <p>Our technical team have a massive depth of knowledge that comes from providing technical services to events run in and around College for other societies, such as Musical Theatre Society, and Summer Ball. All training is provided and many of our alumni end up going into the industry.</p>
+                <p>Previous productions have ranged from Agatha Christie's And Then There Were None, to All in Good Time set in Bolton, to Compost a 5-star reviewed piece of original writing, performed at the Edinburgh Fringe Festival. We run acting and tech workshops on topics including Stage Combat, Improvisation, Lighting, Set design and more.</p>
+                <div class="content_row" id="social_row">
+                    <a rel="noopener" class="large_button" href="https://www.instagram.com/ic_dramsoc/" target="_blank">
+                        <img aria-hidden="true" class="social_logo" src="images/symbols/instagram.png">
+                        Instagram
+                    </a>
+                    <a rel="noopener" class="large_button" href="https://www.facebook.com/dramsoc" target="_blank">
+                        <img aria-hidden="true" class="social_logo" src="images/symbols/facebook.png">
+                        Facebook
+                    </a>
+                    <a rel="noopener" class="large_button" href="https://www.tiktok.com/@ic_dramsoc" target="_blank">
+                        <img aria-hidden="true" class="social_logo" src="images/symbols/tiktok.png">
+                        TikTok
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ACTING -->
+        <div id="acting" class="section">
+            <div class="section_content">
+                <h1>Acting</h1>
+                <p>DramSoc puts on at least one full-length play in our theatre, the Union Concert Hall, per term, as well as a number of other plays in different venues around the College and further afield. Usually our main shows have casts of between 15 and 20 people and we welcome auditions from anyone with any amount of experience, so if you’re thinking of getting involved, keep an eye out for audition posters and notices on our website, social media, and our mailing lists at the start and end of every term.</p>
+            </div>
+        </div>
+
+        <!-- PAST SHOWS -->
+        <div id="past_shows">
+            <div class="show">
+                <img aria-hidden="true"  class="show_img" src="images/shows/bald_prima_donna.jpg">
+                <h4 class="show_title">Bald Prima Donna - October Show 2023</h4>
+            </div>
+            <div class="show">
+                <img aria-hidden="true" class="show_img" src="images/shows/earthquakes_in_london.jpg">
+                <h4 class="show_title">Earthquakes In London - Spring Show 2023</h4>
+            </div>
+        </div>
+
+        <!-- COMMITTEE -->
+        <div id="committee" class="section">
+            <div class="section_content wide_content">
+                <h1>Committee</h1>
+                <div class="content_grid">
+                    <div class="content_item">
+                        <img aria-hidden="true" class="headshot" src="images/committee/jonah.jpg">
+                        <div>
+                            <h2>Jonah<br>McLeod</h2>
+                            <p class="light secondary">President</p>
+                            <a href="mailto:president@dramsoc.org">president@dramsoc.org</a>
+                        </div>
+                    </div>
+                    <div class="content_item">
+                        <img aria-hidden="true" class="headshot" src="images/committee/ben.jpg">
+                        <div>
+                            <h2>Ben<br>Meacher</h2>
+                            <p class="light secondary">Vice President</p>
+                            <a href="mailto:vice@dramsoc.org">vice@dramsoc.org</a>
+                        </div>
+                    </div>
+                    <div class="content_item">
+                        <img aria-hidden="true" class="headshot" src="images/committee/jack_beaumont.jpg">
+                        <div>
+                            <h2>Jack<br>Beaumont</h2>
+                            <p class="light secondary">Technical Director</p>
+                            <a href="mailto:techdir@dramsoc.org">techdir@dramsoc.org</a>
+                        </div>
+                    </div>
+                    <div class="content_item">
+                        <img aria-hidden="true" class="headshot" src="images/committee/oliver.jpg">
+                        <div>
+                            <h2>Oliver<br>Gale</h2>
+                            <p class="light secondary">Treasurer</p>
+                            <a href="mailto:treasurer@dramsoc.org">treasurer@dramsoc.org</a>
+                        </div>
+                    </div>
+                    <div class="content_item">
+                        <img aria-hidden="true" class="headshot" src="images/committee/jarek.jpg">
+                        <div>
+                            <h2>Jarek<br>Ciba</h2>
+                            <p class="light secondary">Lighting Director</p>
+                            <a href="mailto:lighting@dramsoc.org">lighting@dramsoc.org</a>
+                        </div>
+                    </div>
+                    <div class="content_item">
+                        <img aria-hidden="true" class="headshot" src="images/committee/josh.jpg">
+                        <div>
+                            <h2>Josh<br>Henry</h2>
+                            <p class="light secondary">Sound Director</p>
+                            <a href="mailto:sound@dramsoc.org">sound@dramsoc.org</a>
+                        </div>
+                    </div>
+                    <div class="content_item">
+                        <img aria-hidden="true" class="headshot" src="images/committee/liberty.png">
+                        <div>
+                            <h2>Liberty<br>Wright</h2>
+                            <p class="light secondary">Sets, Props & Costumes Director</p>
+                            <a href="mailto:spc@dramsoc.org">spc@dramsoc.org</a>
+                        </div>
+                    </div>
+                    <div class="content_item">
+                        <img aria-hidden="true" class="headshot" src="images/committee/dan.jpg">
+                        <div>
+                            <h2>Dan<br>Cornell</h2>
+                            <p class="light secondary">Acting Director</p>
+                            <a href="mailto:acting@dramsoc.org">acting@dramsoc.org</a>
+                        </div>
+                    </div>
+                    <div class="content_item">
+                        <img aria-hidden="true" class="headshot" src="images/committee/sophie.jpg">
+                        <div>
+                            <h2>Sophie<br>Reck Pointon</h2>
+                            <p class="light secondary">Honorary Secretary & Social Secretary</p>
+                            <a href="mailto:honsec@dramsoc.org">honsec@dramsoc.org & social@dramsoc.org</a>
+                        </div>
+                    </div>
+                    <div class="content_item">
+                        <img aria-hidden="true" class="headshot" src="images/committee/jack_finnis.jpg">
+                        <div>
+                            <h2>Jack<br>Finnis</h2>
+                            <p class="light secondary">Systems Administrator</p>
+                            <a href="mailto:sysadmin@dramsoc.org">sysadmin@dramsoc.org</a>
+                        </div>
+                    </div>
+                    <div class="content_item">
+                        <img aria-hidden="true" class="headshot" src="images/committee/pip.jpg">
+                        <div>
+                            <h2>Pip<br>Moss</h2>
+                            <p class="light secondary">Systems Administrator</p>
+                            <a href="mailto:sysadmin@dramsoc.org">sysadmin@dramsoc.org</a>
+                        </div>
+                    </div>
+                    <div class="content_item">
+                        <img aria-hidden="true" class="headshot" src="images/committee/valerie.jpg">
+                        <div>
+                            <h2>Valerie<br>Locher</h2>
+                            <p class="light secondary">Publicity Officer</p>
+                            <a href="mailto:publicity@dramsoc.org">publicity@dramsoc.org</a>
+                        </div>
+                    </div>
+                    <div class="content_item">
+                        <img aria-hidden="true" class="headshot" src="images/committee/anoushka.jpg">
+                        <div>
+                            <h2>Anoushka<br>Nairac</h2>
+                            <p class="light secondary">Social Secretary</p>
+                            <a href="mailto:social@dramsoc.org">social@dramsoc.org</a>
+                        </div>
+                    </div>
+                    <div class="content_item">
+                        <img aria-hidden="true" class="headshot" src="images/committee/elana.jpg">
+                        <div>
+                            <h2>Elana<br>Todd-Miller</h2>
+                            <p class="light secondary">Ordinary Committee Member</p>
+                            <a href="mailto:ocm@dramsoc.org">ocm@dramsoc.org</a>
+                        </div>
+                    </div>
+                    <div class="content_item">
+                        <img aria-hidden="true" class="headshot" src="images/committee/mystifer_cat.jpg">
+                        <div>
+                            <h2>Mystifer Cat</h2>
+                            <p class="light secondary">Official Mascot</p>
+                            <a href="mailto:mystifercat@dramsoc.org">mystifercat@dramsoc.org</a>
+                        </div>
+                    </div>
+                    <div class="content_item">
+                        <img aria-hidden="true" class="headshot" src="images/committee/rodriguez.jpg">
+                        <div>
+                            <h2>Rodriguez</h2>
+                            <p class="light secondary">Unofficial Mascot</p>
+                            <a href="mailto:rodriguez@dramsoc.org">rodriguez@dramsoc.org</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACT -->
+        <div id="contact" class="section">
+            <div class="section_content">
+                <h1>Contact</h1>
+                <p>We welcome comments and queries and particularly love hearing from audience members. If you would like to stay informed of what is going on within the society then please join our mailing list.</p>
+                <a class="large_button" href="mailto:musical@ic.ac.uk">
+                    <img aria-hidden="true" class="social_logo" src="images/symbols/envelope.png">
+                    musical@ic.ac.uk
+                </a>
+            </div>
+        </div>
+
+        <!-- SOCIAL FOOTER -->
+        <div class="section">
+            <div class="section_content wide_content short_section">
+                <div class="content_row" id="footer_row">
+                    <a class="footer_logo" title="Imperial College London" rel="noopener" href="https://www.imperial.ac.uk" target="_blank">
+                        <img aria-hidden="true" class="invert_dark" id="imperial_logo" src="images/logos/imperial.png">
+                    </a>
+                    <p id="footer_text">Copyright © 2023 Imperial College Union Musical Theatre Society</p>
+                    <a class="footer_logo" title="Imperial College Union" rel="noopener" href="https://www.imperialcollegeunion.org" target="_blank">
+                        <img aria-hidden="true" class="invert_dark" id="union_logo" src="images/logos/union.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
