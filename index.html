@@ -26,15 +26,15 @@
     <body>
         <!-- NAVIGATION -->
         <div id="nav">
-            <div id="navbar" class="wide_section">
+            <div id="navbar" class="regular_content">
                 <button aria-hidden="true" type="button" class="nav_button" onclick="scroll_to('intro')">
-                    <img class="invert" aria-hidden="true" src="images/logos/dramsoc.png" id="nav_logo">
+                    <img class="invert logo" aria-hidden="true" src="images/logos/dramsoc.png">
                 </button>
                 <button aria-hidden="true" type="button" id="nav_menu" class="nav_button invert" onclick="toggle_nav_links()">
                     <img aria-hidden="true" id="nav_menu_img" class="symbol" src="/images/symbols/line.3.horizontal.png">
                 </button>
             </div>
-            <span id="nav_links" class="content_row">
+            <span class="content_row" id="nav_links">
                 <button type="button" class="nav_button" onclick="scroll_to('about')">
                     <h3>About</h3>
                 </buttona>
@@ -43,6 +43,12 @@
                 </button>
                 <button type="button" class="nav_button" onclick="scroll_to('tech')">
                     <h3>Tech</h3>
+                </button>
+                <button type="button" class="nav_button" onclick="scroll_to('committee')">
+                    <h3>Committee</h3>
+                </button>
+                <button type="button" class="nav_button" onclick="scroll_to('mailing_lists')">
+                    <h3>Mailing Lists</h3>
                 </button>
                 <button type="button" class="nav_button" onclick="scroll_to('contact')">
                     <h3>Contact</h3>
@@ -70,33 +76,113 @@
 
         <!-- ABOUT -->
         <div id="about" class="section">
-            <div class="section_content">
+            <div class="section_content narrow_content">
                 <h1>About</h1>
                 <p>The Imperial College Dramatic Society is one of two major theatrical arts societies at Imperial College London, with the other being the <a rel="noopener" href="https://mtsoc.org" target="_blank">Musical Theatre Society</a>. Founded in 1907, around the time of the founding of the College, we have existed for over a hundred years and even predate Imperial College Union itself!</p>
                 <p>Each year we aim to put on two major plays, as well as several smaller fringe productions, acting and technical workshops. We also provide technical services to other Clubs and Societies, multiple Union events and external clients.</p>
                 <p>Unusually amongst University drama societies, we maintain a full complement of theatrical equipment, technicians, designers, carpenters, riggers, and stage and production managers, in addition to hosting a large community of actors. This gives us a unique advantage to our productions: from the initial planning stages, to the design and get in, all the way through to the show run, everyone is working alongside each other and interacting closely to produce truly remarkable results.</p>
+                <div class="content_row">
+                    <a rel="noopener" class="large_button" href="https://www.instagram.com/ic_dramsoc/" target="_blank">
+                        <img aria-hidden="true" class="social_logo invert_light" src="images/symbols/instagram.png">
+                        Instagram
+                    </a>
+                    <a rel="noopener" class="large_button" href="https://www.facebook.com/dramsoc" target="_blank">
+                        <img aria-hidden="true" class="social_logo invert_light" src="images/symbols/facebook.png">
+                        Facebook
+                    </a>
+                    <a rel="noopener" class="large_button" href="https://www.tiktok.com/@ic_dramsoc" target="_blank">
+                        <img aria-hidden="true" class="social_logo invert_light" src="images/symbols/tiktok.png">
+                        TikTok
+                    </a>
+                </div>
             </div>
         </div>
 
         <!-- ACTING -->
         <div id="acting" class="section">
-            <div class="section_content">
+            <div class="section_content narrow_content">
                 <h1>Acting</h1>
                 <p>DramSoc puts on at least one full-length play in our theatre, the Union Concert Hall, per term, as well as a number of other plays in different venues around the College and further afield. Usually our main shows have casts of between 15 and 20 people and we welcome auditions from anyone with any amount of experience, so if you’re thinking of getting involved, keep an eye out for audition posters and notices on our website, social media, and our mailing lists at the start and end of every term.</p>
             </div>
         </div>
 
         <!-- PAST SHOWS -->
-        <div id="past_shows">
-            <div class="show">
-                <img aria-hidden="true" class="show_img" src="images/shows/earthquakes_in_london.jpg">
-                <h4 class="show_title">Earthquakes In London - Spring Show 2023</h4>
+        <div id="past_shows" class="section">
+            <div class="section_content">
+                <h1>Past Shows</h1>
+                <div id="past_shows_grid">
+                    <div class="show">
+                        <img aria-hidden="true" class="show_img" src="images/shows/bald_prima_donna.jpg">
+                        <h4 class="show_title">The Bald Prima Donna - October Show 2023</h4>
+                    </div>
+                    <div class="show">
+                        <img aria-hidden="true" class="show_img" src="images/shows/earthquakes_in_london.jpg">
+                        <h4 class="show_title">Earthquakes In London - Spring Main 2023</h4>
+                    </div>
+                    <div class="show">
+                        <img aria-hidden="true" class="show_img" src="images/shows/an_angel_in_islington.jpg">
+                        <h4 class="show_title">An Angel In Islington - October Show 2021</h4>
+                    </div>
+                    <div class="show">
+                        <img aria-hidden="true" class="show_img" src="images/shows/all_in_good_time.jpeg">
+                        <h4 class="show_title">All In Good Time - Spring Main 2019</h4>
+                    </div>
+                    <div class="show">
+                        <img aria-hidden="true" class="show_img" src="images/shows/confusions.jpg">
+                        <h4 class="show_title">Confusions - Autumn Studio 2018</h4>
+                    </div>
+                    <div class="show">
+                        <img aria-hidden="true" class="show_img" src="images/shows/and_then_there_were_none.jpg">
+                        <h4 class="show_title">And Then There Were None - Autumn Main 2018</h4>
+                    </div>
+                    <div class="show">
+                        <img aria-hidden="true" class="show_img" src="images/shows/no_exit.jpg">
+                        <h4 class="show_title">No Exit - Autumn Studio 2017</h4>
+                    </div>
+                    <div class="show">
+                        <img aria-hidden="true" class="show_img" src="images/shows/maskerade.jpg">
+                        <h4 class="show_title">Maskerade - Autumn Main 2017</h4>
+                    </div>
+                    <div class="show">
+                        <img aria-hidden="true" class="show_img" src="images/shows/beowulf.jpg">
+                        <h4 class="show_title">Beowulf - Autumn Main 2016</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TECH -->
+        <div id="tech" class="section">
+            <div class="section_content narrow_content">
+                <h1>Tech</h1>
+                <p>There are plenty of roles within DramSoc even for those who prefer to stay off the stage! All technical aspects of our shows, and of shows staged by the Musical Theatre Society, are provided by DramSoc Crew. We design and build the set, then dress it and light it. We design sound effects and rig sound equipment. And we make sure the cast look their best with the right costumes, props and make-up.</p>
+                <p>On top of this, we provide sound, lighting and rigging for live events hosted by the Union and other Clubs & Societies, such as the annual Summer Ball, talent shows, live music events and club nights. We would love you to be around to help out! For more information or to get involved, email our Technical Director, and join the Crew Talk mailing list.</p>
+            </div>
+        </div>
+
+        <!-- TECHNICAL SERVICES -->
+        <div id="tech_services" class="section">
+            <div class="section_content narrow_content">
+                <h1>Technical Services</h1>
+                <p>DramSoc provides a wide range of technical services; from plays to musicals, talent shows to outdoor music festival stages, variety shows to the annual Summer Ball, we do it all. We have a large and dedicated crew, and hire out professional lighting and sound equipment, props and set from our extensive stores. In addition, we offer comprehensive production management, consultancy and design services.</p>
+                <p>Our experience in production management and design ranges from the large-scale annual Summer Ball, including the lighting and sound in the Great Hall and the Queen's Tower Rooms and all the set and design features, down to small societal events in Metric. As such we believe that you will find our help and advice invaluable whilst planning your event, regardless of its size or complexity.</p>
+                <p>Even if you do not use DramSoc's services, we will be more than happy to advise and assist in getting alternative quotes. However, we are quite confident that we care more about the success of your event than a hire company would, and we can deliver more for your money, too. In any case, please try to get in contact with us as early as possible, as the more time we have, the better we can help you.</p>
+                <p>Please contact the DramSoc Technical Director for all enquiries related to technical services.</p>
+            </div>
+        </div>
+
+        <!-- PLAY PROPOSALS -->
+        <div id="play_proposals" class="section">
+            <div class="section_content narrow_content">
+                <h1>Propose a Play</h1>
+                <p>DramSoc decides on each term's shows at a Play Proposals meeting (announced on the DramSoc mailing list) held near to the end of the previous term.</p>
+                <p>If you have an idea for a proposal, but are unsure about any aspect of the proposal or proposals process, please email the DramSoc President or Acting Director. Additionally, anyone may come to the meeting to observe the process.</p>
             </div>
         </div>
 
         <!-- COMMITTEE -->
         <div id="committee" class="section">
-            <div class="section_content wide_content">
+            <div class="section_content regular_content">
                 <h1>Committee</h1>
                 <div class="content_grid">
                     <div class="content_item">
@@ -231,57 +317,123 @@
             </div>
         </div>
 
+        <!-- MAILING LISTS -->
+        <div id="mailing_lists" class="section">
+            <div class="section_content regular_content">
+                <h1>Mailing Lists</h1>
+                <p class="narrow_content">Joining our mailing lists is the best way to keep up to date with society news, and find out about society events. Read the descriptions below to help you decide which lists to join.</p>
+                <div class="content_grid">
+                    <div class="content_item">
+                        <h2>DramSoc Talk</h2>
+                        <p>This is the main society mailing list. All society members should be on this list. If you want information about our plays and society events, then this is the list to join. Traffic is minimal; a weekly newsletter and information about our plays are the only things that go to this list.</p>
+                        <a rel="noopener" class="large_button invert_button" href="https://mailman.ic.ac.uk/mailman/listinfo/dramsoc-talk" target="_blank">
+                            <img aria-hidden="true" class="social_logo" src="images/symbols/envelope.png">
+                            Subscribe
+                        </a>
+                    </div>
+                    <div class="content_item">
+                        <h2>Actor Talk</h2>
+                        <p>This list is for conversation between DramSoc's community of actors, and those interested in acting. It will be the primary means of contact for workshops and members will be the first to know about auditions for upcoming plays.</p>
+                        <a rel="noopener" class="large_button invert_button" href="https://mailman.ic.ac.uk/mailman/listinfo/icds-actor-talk" target="_blank">
+                            <img aria-hidden="true" class="social_logo" src="images/symbols/envelope.png">
+                            Subscribe
+                        </a>
+                    </div>
+                    <div class="content_item">
+                        <h2>Crew Talk</h2>
+                        <p>This list is for crew members, and is the main way we distribute crew information, event and show dates, crew requests and crew calls. All crew members should be on this list! Unless explicitly stated otherwise, anyone can show up for any call that interests them, regardless of skill level or prior experience; we find the best way to learn is to join our experienced crew and learn from them!</p>
+                        <a rel="noopener" class="large_button invert_button" href="https://mailman.ic.ac.uk/mailman/listinfo/icds-crew-talk" target="_blank">
+                            <img aria-hidden="true" class="social_logo" src="images/symbols/envelope.png">
+                            Subscribe
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- CONTACT -->
         <div id="contact" class="section">
             <div class="section_content">
                 <h1>Contact Us</h1>
-                <p>The easiest way to get in touch with us is by email:</p>
-                <ul>
-                    <li><a href="mailto:president@dramsoc.org">President</a> for general queries.</li>
-                    <li><a href="mailto:techdir@dramsoc.org">Technical Director</a> for queries related to technical services and hire.</li>
-                    <li><a href="mailto:treasurer@dramsoc.org">Treasurer</a> for financial and invoicing queries. For quotes contact the Technical Director.</li>
-                    <li><a href="mailto:acting@dramsoc.org">Acting Director</a> for queries related to plays, play proposals, auditions and acting workshops.</li>
-                    <li><a href="mailto:sysadmin@dramsoc.org">System Administrator</a> for queries related to this website.</li>
-                </ul>
+                <div class="content_column">
+                    <div class="content_row">
+                        <a href="mailto:president@dramsoc.org" class="large_button">
+                            <img aria-hidden="true" class="social_logo invert_light" src="images/symbols/envelope.png">
+                            President
+                        </a>
+                        <p>General queries.</p>
+                    </div>
+                    <div class="content_row">
+                        <a href="mailto:treasurer@dramsoc.org" class="large_button">
+                            <img aria-hidden="true" class="social_logo invert_light" src="images/symbols/envelope.png">
+                            Treasurer
+                        </a>
+                        <p>Financial and invoicing queries. For quotes contact the Technical Director.</p>
+                    </div>
+                    <div class="content_row">
+                        <a href="mailto:techdir@dramsoc.org" class="large_button">
+                            <img aria-hidden="true" class="social_logo invert_light" src="images/symbols/envelope.png">
+                            Technical Director
+                        </a>
+                        <p>Queries related to technical services and hire.</p>
+                    </div>
+                    <div class="content_row">
+                        <a href="mailto:acting@dramsoc.org" class="large_button">
+                            <img aria-hidden="true" class="social_logo invert_light" src="images/symbols/envelope.png">
+                            Acting Director
+                        </a>
+                        <p>Queries related to plays, play proposals, auditions and acting workshops.</p>
+                    </div>
+                    <div class="content_row">
+                        <a href="mailto:sysadmin@dramsoc.org" class="large_button">
+                            <img aria-hidden="true" class="social_logo invert_light" src="images/symbols/envelope.png">
+                            System Administrator
+                        </a>
+                        <p>Queries related to this website.</p>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- FOOTER -->
         <div id="footer" class="section">
-            <div class="section_content wide_content short_section">
-                <div>
-                    <a href="https://dramsoc.org/policies/Constitution.pdf">Constitution</a>
-                    <a href="https://horde.dramsoc.org">Horde</a>
-                    <a href="https://wiki.dramsoc.org">Wiki</a>
-                    <a href="https://dramsoc.org/minutes/Hire_Terms_and_Conditions.pdf">Hire Terms and Conditions</a>
-                    <a href="https://drive.google.com/drive/folders/1k5JOO6hJiYjPn8yoFymKMHEBGHtOoada">Committee Meeting Minutes</a>
+            <div class="section_content">
+                <div class="content_grid">
+                    <button aria-hidden="true" type="button" class="nav_button" onclick="scroll_to('intro')">
+                        <img class="invert logo" aria-hidden="true" src="images/logos/dramsoc.png">
+                    </button>
+                    <p id="address">
+                        Imperial College Dramatic Society<br>
+                        Imperial College Union<br>
+                        Beit Quadrangle<br>
+                        Prince Consort Road<br>
+                        South Kensington<br>
+                        London<br>
+                        SW7 2BB<br>
+                    </p>
+                    <div class="content_column">
+                        <a class="footer_link" href="https://drive.google.com/drive/folders/1k5JOO6hJiYjPn8yoFymKMHEBGHtOoada" rel="noopener" target="_blank">Committee Meeting Minutes</a>
+                        <a class="footer_link" href="/files/hire_terms_and_conditions.pdf" target="_blank">Hire Terms and Conditions</a>
+                        <a class="footer_link" href="/files/constitution.pdf" target="_blank">Constitution</a>
+                        <a class="footer_link" href="https://horde.dramsoc.org" rel="noopener" target="_blank">Horde</a>
+                        <a class="footer_link" href="https://wiki.dramsoc.org" rel="noopener" target="_blank">Wiki</a>
+                    </div>
+                    <div class="content_column">
+                        <a class="footer_logo" title="Imperial College London" rel="noopener" href="https://www.imperial.ac.uk" target="_blank">
+                            <img aria-hidden="true" class="invert" id="imperial_logo" src="images/logos/imperial.png">
+                        </a>
+                        <a class="footer_logo" title="Imperial College Union" rel="noopener" href="https://www.imperialcollegeunion.org" target="_blank">
+                            <img aria-hidden="true" class="invert" id="union_logo" src="images/logos/union.png">
+                        </a>
+                        <a class="footer_logo" title="The Comus Club" rel="noopener" href="https://www.comus.org.uk" target="_blank">
+                            <img aria-hidden="true" class="invert" id="comus_logo" src="images/logos/comus.png">
+                        </a>
+                    </div>
                 </div>
-                <div class="content_row" id="social_row">
-                    <a rel="noopener" class="large_button" href="https://www.instagram.com/ic_dramsoc/" target="_blank">
-                        <img aria-hidden="true" class="social_logo invert" src="images/symbols/instagram.png">
-                        Instagram
-                    </a>
-                    <a rel="noopener" class="large_button" href="https://www.facebook.com/dramsoc" target="_blank">
-                        <img aria-hidden="true" class="social_logo invert" src="images/symbols/facebook.png">
-                        Facebook
-                    </a>
-                    <a rel="noopener" class="large_button" href="https://www.tiktok.com/@ic_dramsoc" target="_blank">
-                        <img aria-hidden="true" class="social_logo invert" src="images/symbols/tiktok.png">
-                        TikTok
-                    </a>
-                </div>
-                <div class="content_row" id="footer_row">
-                    <a class="footer_logo" title="Imperial College London" rel="noopener" href="https://www.imperial.ac.uk" target="_blank">
-                        <img aria-hidden="true" class="invert" id="imperial_logo" src="images/logos/imperial.png">
-                    </a>
-                    <a class="footer_logo" title="Imperial College Union" rel="noopener" href="https://www.imperialcollegeunion.org" target="_blank">
-                        <img aria-hidden="true" class="invert" id="union_logo" src="images/logos/union.png">
-                    </a>
-                    <a class="footer_logo" title="The Comus Club" rel="noopener" href="https://www.comus.org.uk" target="_blank">
-                        <img aria-hidden="true" class="invert" id="comus_logo" src="images/logos/comus.png">
-                    </a>
-                    <p id="footer_text">Copyright © 2024 Imperial College Dramatic Society</p>
-                </div>
+                <p>
+                    DramSoc is a part of Imperial College Union, which is a UK Registered Charity, Number 1151241<br>
+                    Copyright © 2024 Imperial College Dramatic Society
+                </p>
             </div>
         </div>
     </body>
