@@ -261,7 +261,7 @@ button, a {
     z-index: 1;
     bottom: 0px;
 }
-/* Hide down button you can already see the rest of the page */
+/* Hide down button if you can already see the rest of the page */
 @media (max-aspect-ratio: 16/10) {
     #down_button {
         opacity: 0;
