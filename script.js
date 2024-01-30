@@ -22,30 +22,15 @@ function on_player_ready() {
 function on_player_state_change(state) {
     switch (state.data) {
     case YT.PlayerState.PLAYING:
-        // Show the player
         player.style.opacity = 1
         break
     case YT.PlayerState.ENDED:
-        // Hide player
         player.style.opacity = 0
         // Scroll down to the About section when the video finishes
         if (document.body.scrollTop === 0) {          
             scroll_to('about')
         }
         break
-    }
-}
-
-// Toggle sound on the player
-function toggle_mute() {
-    if (youtube) {
-        if (youtube.isMuted()) {
-            youtube.unMute()
-            mute_button_img.src = '/images/symbols/speaker.wave.3.fill.png'
-        } else {
-            youtube.mute()
-            mute_button_img.src = '/images/symbols/speaker.slash.fill.png'
-        }
     }
 }
 
@@ -63,10 +48,9 @@ function toggle_nav_links() {
 
 // Scroll to the given content section
 function scroll_to(anchor) {
-    let element = document.getElementById(anchor)
-    element.scrollIntoView()
+    document.getElementById(anchor).scrollIntoView()
 
-    // Hide the navigation links where necessary
+    // Hide the navigation links if presented
     if (nav_links.classList.contains('selected')) {
         toggle_nav_links()
     }
