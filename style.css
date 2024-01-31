@@ -2,6 +2,7 @@
 :root {
     --lighter: rgba(255, 255, 255, 0.1);
     --darker: rgba(0, 0, 0, 0.2);
+    --secondary: #8A8A8E;
 }
 @media(prefers-color-scheme: light) {
     :root {
@@ -39,6 +40,7 @@
 }
 ul {
     text-align: left;
+    padding-left: 20px;
 }
 p, li {
     line-height: 1.75rem;
@@ -335,6 +337,7 @@ button, a {
 }
 #footer_grid {
     align-items: start;
+    justify-content: start;
 }
 #imperial_logo {
     height: 40px;
@@ -347,4 +350,7 @@ button, a {
 }
 #address {
     text-align: left;
+}
+#copyright {
+    color: var(--secondary);
 }
