@@ -3,6 +3,9 @@
     --lighter: rgba(255, 255, 255, 0.1);
     --darker: rgba(0, 0, 0, 0.2);
     --secondary: #8A8A8E;
+
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
 }
 @media(prefers-color-scheme: light) {
     :root {
