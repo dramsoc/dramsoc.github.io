@@ -76,6 +76,10 @@ p, li {
     background-size: cover;
     color: white;
 }
+.plain_section {
+    color: var(--primary);
+    background-color: var(--background);
+}
 .section_content {
     display: flex;
     flex-direction: column;
@@ -119,11 +123,12 @@ p, li {
 
 /* IMAGES */
 .invert {
-    filter: invert(1);
+    filter: invert();
 }
 .icon {
     width: 20px;
     height: 20px;
+    filter: invert();
 }
 .small_logo {
     height: 70px;
@@ -141,7 +146,7 @@ button, a {
 }
 @media(hover: hover) {
     button:hover, a:hover {
-        opacity: 0.75; /* Slightly see-through on hover */
+        opacity: 0.75;
     }
 }
 .large_button {
@@ -158,11 +163,13 @@ button, a {
     background-color: white;
     color: black;
 }
-.large_button .icon {
-    filter: invert();
-}
-.background_section .large_button .icon {
+.background_section .icon {
     filter: none;
+}
+@media(prefers-color-scheme: dark) {
+    .icon {
+        filter: none;
+    }
 }
 
 /* NAVIGATION */
@@ -302,6 +309,12 @@ button, a {
 .show_title {
     padding: 15px 10px;
 }
+@media(prefers-color-scheme: dark) {
+    .show {
+        box-shadow: none;
+        background-color: var(--secondary-background);
+    }
+}
 
 /* COMMITTEE */
 .headshot {
@@ -312,9 +325,6 @@ button, a {
 .committee_role {
     font-size: 1.1rem;
     text-transform: uppercase;
-}
-.committee_email {
-    color: var(--accent);
 }
 
 /* FOOTER */
