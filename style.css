@@ -332,6 +332,12 @@ button, a {
     text-transform: uppercase;
 }
 
+/* CONTACT */
+.contact_option {
+    flex-wrap: nowrap;
+    text-align: left;
+}
+
 /* FOOTER */
 #footer {
     background-color: black;
