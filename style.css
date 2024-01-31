@@ -328,7 +328,8 @@ button, a {
     border-radius: 50%;
 }
 .committee_role {
-    font-size: 1.1rem;
+    color: var(--secondary);
+    font-size: 1.2rem;
     text-transform: uppercase;
 }
 
