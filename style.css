@@ -1,18 +1,20 @@
 /* COLOURS */
+:root {
+    --lighter: rgba(255, 255, 255, 0.1);
+    --darker: rgba(0, 0, 0, 0.2);
+}
 @media(prefers-color-scheme: light) {
     :root {
         --primary: black;
         --background: white;
-        --secondary-background: #bbbbbb;
-        --accent: #007AFF;
+        --plain-background: white;
     }
 }
 @media(prefers-color-scheme: dark) {
     :root {
         --primary: white;
         --background: black;
-        --secondary-background: #222222;
-        --accent: #0A84FF;
+        --plain-background: var(--lighter);
     }
 }
 
@@ -65,7 +67,6 @@ p, li {
     justify-content: center;
     align-items: center;
     scroll-margin-top: var(--navbar_height);
-    background-color: white;
     padding: 100px 20px;
 }
 .background_section {
@@ -78,7 +79,7 @@ p, li {
 }
 .plain_section {
     color: var(--primary);
-    background-color: var(--background);
+    background-color: var(--plain-background)
 }
 .section_content {
     display: flex;
@@ -294,8 +295,8 @@ button, a {
     padding: 20px 0px;
 }
 .show {
-    background-color: var(--background);
-    box-shadow: 0px 5px 10px var(--secondary-background);
+    background-color: var(--plain-background);
+    box-shadow: 0px 5px 10px var(--darker);
     max-width: 500px;
     flex: 1 1 400px;
     border-radius: 15px;
@@ -312,7 +313,6 @@ button, a {
 @media(prefers-color-scheme: dark) {
     .show {
         box-shadow: none;
-        background-color: var(--secondary-background);
     }
 }
 
