@@ -1,6 +1,6 @@
-# ICU DramSoc Website
+# DramSoc Website
 
-This repository contains all the code for the Imperial College Union Dramatic Society website.
+This repository contains all the code for the Imperial College Dramatic Society website.
 
 The website is hosted by GitHub Pages. Pushing to the main branch will automatically reload the website within about a minute. Some files are arranged strangely in order to integrate with GitHub Pages' routing system correctly:
 
