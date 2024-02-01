@@ -48,6 +48,9 @@ ul {
 p, li {
     line-height: 1.75rem;
 }
+.break {
+    flex: 100%;
+}
 
 /* BACKGROUND IMAGES */
 #intro {
