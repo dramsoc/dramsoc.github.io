@@ -173,7 +173,7 @@ button, a {
     filter: none;
 }
 @media(prefers-color-scheme: dark) {
-    .icon {
+    .large_button .icon {
         filter: none;
     }
 }
