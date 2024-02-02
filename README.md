@@ -7,8 +7,10 @@ The website is hosted by GitHub Pages. Pushing to the main branch will automatic
 GitHub Pages serves html files with their extension removed:
 
 * index.html is served at /
-* tickets.html is served at /tickets
 * 404.html is served for any 404 error and redirects to /
+* tickets.html is served at /tickets
+* tickets/index.html is served at /tickets/
+* etc.
 
 Redirects are implemented using a single html meta refresh tag.
 
