@@ -1,0 +1,92 @@
+[
+    {
+        "role": "President",
+        "email": "president@dramsoc.org",
+        "name": "Jonah McLeod",
+        "image": "jonah.jpg"
+    },
+    {
+        "role": "Vice President",
+        "email": "vice@dramsoc.org",
+        "name": "Ben Meacher",
+        "image": "ben.jpg"
+    },
+    {
+        "role": "Treasurer",
+        "email": "treasurer@dramsoc.org",
+        "name": "Oliver Gale",
+        "image": "oliver.jpg"
+    },
+    {
+        "role": "Honorary Secretary",
+        "email": "honsec@dramsoc.org",
+        "name": "Sophie Reck Pointon",
+        "image": "sophie.jpg"
+    },
+    {
+        "role": "Technical Director",
+        "email": "techdir@dramsoc.org",
+        "name": "Jack Beaumont",
+        "image": "jack_beaumont.jpg"
+    },
+    {
+        "role": "Acting Director",
+        "email": "acting@dramsoc.org",
+        "name": "Dan Cornell",
+        "image": "dan.jpg"
+    },
+    {
+        "role": "Lighting Director",
+        "email": "lighting@dramsoc.org",
+        "name": "Jarek Ciba",
+        "image": "jarek.jpg"
+    },
+    {
+        "role": "Sound Director",
+        "email": "sound@dramsoc.org",
+        "name": "Josh Henry",
+        "image": "josh.jpg"
+    },
+    {
+        "role": "Sets, Props & Costumes Director",
+        "email": "spc@dramsoc.org",
+        "name": "Liberty Wright",
+        "image": "liberty.png"
+    },
+    {
+        "role": "Systems Administrator",
+        "email": "sysadmin@dramsoc.org",
+        "name": "Pip Moss",
+        "image": "pip.jpg"
+    },
+    {
+        "role": "Systems Administrator",
+        "email": "sysadmin@dramsoc.org",
+        "name": "Jack Finnis",
+        "image": "jack_finnis.jpg"
+    },
+    {
+        "role": "Publicity Officer",
+        "email": "publicity@dramsoc.org",
+        "name": "Valerie Locher",
+        "image": "valerie.jpg"
+    },
+    {
+        "role": "Social Secretary",
+        "email": "social@dramsoc.org",
+        "name": "Anoushka Nairac",
+        "image": "anoushka.jpg"
+    },
+    {
+        "role": "Ordinary Committee Member",
+        "email": "ocm@dramsoc.org",
+        "name": "Elana Todd-Miller",
+        "image": "elana.jpg"
+    },
+    {
+        "role": "Official Mascot",
+        "email": "mystifercat@dramsoc.org",
+        "name": "Mystifer Cat",
+        "image": "mystifer_cat.jpg"
+    }
+]

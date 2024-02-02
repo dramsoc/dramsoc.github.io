@@ -294,7 +294,7 @@ button, a {
 }
 
 /* SHOWS */
-#past_shows {
+#shows_grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
