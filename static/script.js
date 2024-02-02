@@ -38,7 +38,7 @@ function on_player_state_change(state) {
 function toggle_nav_links() {
     nav_links.classList.add('transition')
     nav_links.classList.toggle('selected')
-    nav_menu_img.src = nav_links.classList.contains('selected') ? '/images/symbols/xmark.png' : '/images/symbols/line.3.horizontal.png'
+    nav_menu_img.src = nav_links.classList.contains('selected') ? 'static/images/symbols/xmark.png' : 'static/images/symbols/line.3.horizontal.png'
 
     // Stop animating the navigation links
     setTimeout(function() {
@@ -58,7 +58,7 @@ function scroll_to(anchor) {
 
 // Load the committee members from the JSON file
 async function load_committee() {
-    var response = await fetch('data/committee.json')
+    var response = await fetch('static/data/committee.json')
     var committee = await response.json()
     
     for (member of committee) {
@@ -67,7 +67,7 @@ async function load_committee() {
 
         var image = document.createElement('img')
         image.classList.add('headshot')
-        image.src = 'images/committee/' + member.image
+        image.src = 'static/images/committee/' + member.image
         member_div.appendChild(image)
 
         var info_div = document.createElement('div')
@@ -92,7 +92,7 @@ async function load_committee() {
 
 // Load the shows from the JSON file
 async function load_shows() {
-    var response = await fetch('data/shows.json')
+    var response = await fetch('static/data/shows.json')
     var shows = await response.json()
     
     for (show of shows) {
@@ -101,7 +101,7 @@ async function load_shows() {
 
         var image = document.createElement('img')
         image.classList.add('show_img')
-        image.src = 'images/shows/' + show.image
+        image.src = 'static/images/shows/' + show.image
         show_div.appendChild(image)
 
         var title = document.createElement('h4')

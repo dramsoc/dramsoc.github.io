@@ -54,19 +54,19 @@ p, li, #address {
 
 /* BACKGROUND IMAGES */
 #intro {
-    background-image: url(../images/general/summer_ball1.jpg);
+    background-image: url(images/general/summer_ball1.jpg);
 }
 #acting {
-    background-image: url(../images/general/acting1.jpg);
+    background-image: url(images/general/acting1.jpg);
 }
 #tech {
-    background-image: url(../images/general/summer_ball2.jpg);
+    background-image: url(images/general/summer_ball2.jpg);
 }
 #mailing_lists {
-    background-image: url(../images/general/summer_ball3.jpg);
+    background-image: url(images/general/summer_ball3.jpg);
 }
 #uch {
-    background-image: url(../images/general/uch2.jpeg);
+    background-image: url(images/general/uch2.jpeg);
 }
 
 /* CONTENT */
