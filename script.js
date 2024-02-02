@@ -55,3 +55,63 @@ function scroll_to(anchor) {
         toggle_nav_links()
     }
 }
+
+// Load the committee members from the JSON file
+async function load_committee() {
+    var response = await fetch('data/committee.json')
+    var committee = await response.json()
+    
+    for (member of committee) {
+        var member_div = document.createElement('div')
+        member_div.classList.add('content_item')
+
+        var image = document.createElement('img')
+        image.classList.add('headshot')
+        image.src = 'images/committee/' + member.image
+        member_div.appendChild(image)
+
+        var info_div = document.createElement('div')
+        var name = document.createElement('h2')
+        name.innerHTML = member.name
+        info_div.appendChild(name)
+
+        var role = document.createElement('p')
+        role.classList.add('committee_role')
+        role.innerHTML = member.role
+        info_div.appendChild(role)
+
+        var email = document.createElement('a')
+        email.href = 'mailto:' + member.email
+        email.innerHTML = member.email
+
+        info_div.appendChild(email)
+        member_div.appendChild(info_div)
+        committee_grid.appendChild(member_div)
+    }
+}
+
+// Load the shows from the JSON file
+async function load_shows() {
+    var response = await fetch('data/shows.json')
+    var shows = await response.json()
+    
+    for (show of shows) {
+        var show_div = document.createElement('div')
+        show_div.classList.add('show')
+
+        var image = document.createElement('img')
+        image.classList.add('show_img')
+        image.src = 'images/shows/' + show.image
+        show_div.appendChild(image)
+
+        var title = document.createElement('h4')
+        title.classList.add('show_title')
+        title.innerHTML = show.title
+        show_div.appendChild(title)
+
+        shows_grid.appendChild(show_div)
+    }
+}
+
+load_committee().then()
+load_shows().then()
