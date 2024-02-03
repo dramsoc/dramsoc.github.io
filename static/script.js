@@ -1,3 +1,15 @@
+// Toggle showing the navigation links in compact width
+function toggle_nav_links() {
+    nav_links.classList.add('transition')
+    nav_links.classList.toggle('selected')
+    nav_menu_img.src = nav_links.classList.contains('selected') ? 'static/images/symbols/xmark.png' : 'static/images/symbols/line.3.horizontal.png'
+
+    // Stop animating the navigation links
+    setTimeout(function() {
+        nav_links.classList.remove('transition')
+    }, 350)
+}
+
 // Scroll to the given content section
 function scroll_to(anchor) {
     document.getElementById(anchor).scrollIntoView()

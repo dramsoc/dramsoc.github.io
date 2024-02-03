@@ -10,7 +10,10 @@
         
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:700,400">
         <link rel="stylesheet" href="static/style.css">
+        <script src="static/script.js"></script>
+
         <script>
+            // Load the YouTube Iframe API
             var player_script = document.createElement('script');
             player_script.src = "https://www.youtube.com/iframe_api";
             var first_script = document.getElementsByTagName('script')[0];
@@ -54,20 +57,7 @@
                     break
                 }
             }
-
-            // Toggle showing the navigation links in compact width
-            function toggle_nav_links() {
-                nav_links.classList.add('transition')
-                nav_links.classList.toggle('selected')
-                nav_menu_img.src = nav_links.classList.contains('selected') ? 'static/images/symbols/xmark.png' : 'static/images/symbols/line.3.horizontal.png'
-
-                // Stop animating the navigation links
-                setTimeout(function() {
-                    nav_links.classList.remove('transition')
-                }, 350)
-            }
         </script>
-        <script src="static/script.js"></script>
 
         <!-- GOOGLE ANALYTICS -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-8EMSMM17Z4"></script>
