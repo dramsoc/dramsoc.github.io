@@ -1,6 +1,12 @@
-// Called automatically by the player_api script tag in index.html
-function onYouTubePlayerAPIReady() {
-    console.log('YouTube API ready')
+// Setup the YouTube player
+var player_script = document.createElement('script');
+player_script.src = "https://www.youtube.com/iframe_api";
+var first_script = document.getElementsByTagName('script')[0];
+first_script.parentNode.insertBefore(player_script, first_script);
+
+// Called automatically by the player_script when it's ready
+function onYouTubeIframeAPIReady() {
+    console.log('YouTube Iframe API ready')
     youtube = new YT.Player('player', {
         videoId: 'PwMVQZQm9a4',
         playerVars: {
