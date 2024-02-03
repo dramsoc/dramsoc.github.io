@@ -1,5 +1,6 @@
 // Called automatically by the player_api script tag in index.html
 function onYouTubePlayerAPIReady() {
+    console.log('YouTube API ready')
     youtube = new YT.Player('player', {
         videoId: 'PwMVQZQm9a4',
         playerVars: {
@@ -14,12 +15,14 @@ function onYouTubePlayerAPIReady() {
 
 // Called when the player is ready to start
 function on_player_ready() {
+    console.log('YouTube player ready')
     youtube.mute()
     youtube.playVideo()
 }
 
 // Called when the player state changes
 function on_player_state_change(state) {
+    console.log('Player state changed to', state.data)
     switch (state.data) {
     case YT.PlayerState.PLAYING:
         player.style.opacity = 1
