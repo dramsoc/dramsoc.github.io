@@ -89,7 +89,7 @@ p, li, #address {
     color: var(--primary);
     background-color: var(--plain-background)
 }
-.section_content {
+.section_column {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,7 +132,7 @@ p, li, #address {
 
 /* IMAGES */
 .invert {
-    filter: invert();
+    filter: invert(); /* Convert black symbols to white */
 }
 .icon {
     width: 20px;
