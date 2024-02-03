@@ -10,7 +10,64 @@
         
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:700,400">
         <link rel="stylesheet" href="static/style.css">
-        <script defer src="static/script.js"></script>
+        <script>
+            var player_script = document.createElement('script');
+            player_script.src = "https://www.youtube.com/iframe_api";
+            var first_script = document.getElementsByTagName('script')[0];
+            first_script.parentNode.insertBefore(player_script, first_script);
+
+            // Called automatically by the player_script when it's ready
+            function onYouTubeIframeAPIReady() {
+                console.log('YouTube Iframe API ready')
+                youtube = new YT.Player('player', {
+                    videoId: 'PwMVQZQm9a4',
+                    playerVars: {
+                        controls: 0 // Hide all controls
+                    },
+                    events: {
+                        onReady: on_player_ready,
+                        onStateChange: on_player_state_change
+                    }
+                })
+            }
+
+            // Called when the player is ready to start
+            function on_player_ready() {
+                console.log('YouTube player ready')
+                youtube.mute()
+                youtube.playVideo()
+            }
+
+            // Called when the player state changes
+            function on_player_state_change(state) {
+                console.log('Player state changed to', state.data)
+                switch (state.data) {
+                case YT.PlayerState.PLAYING:
+                    player.style.opacity = 1
+                    break
+                case YT.PlayerState.ENDED:
+                    player.style.opacity = 0
+                    // Scroll down to the About section when the video finishes
+                    if (document.body.scrollTop === 0) {          
+                        scroll_to('about')
+                    }
+                    break
+                }
+            }
+
+            // Toggle showing the navigation links in compact width
+            function toggle_nav_links() {
+                nav_links.classList.add('transition')
+                nav_links.classList.toggle('selected')
+                nav_menu_img.src = nav_links.classList.contains('selected') ? 'static/images/symbols/xmark.png' : 'static/images/symbols/line.3.horizontal.png'
+
+                // Stop animating the navigation links
+                setTimeout(function() {
+                    nav_links.classList.remove('transition')
+                }, 350)
+            }
+        </script>
+        <script src="static/script.js"></script>
 
         <!-- GOOGLE ANALYTICS -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-8EMSMM17Z4"></script>
