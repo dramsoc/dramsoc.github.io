@@ -4,7 +4,7 @@ player_script.src = "https://www.youtube.com/iframe_api";
 var first_script = document.getElementsByTagName('script')[0];
 first_script.parentNode.insertBefore(player_script, first_script);
 
-// Called automatically by the player_script when it's ready
+// Called automatically by player_script when it's ready
 function onYouTubeIframeAPIReady() {
     console.log('YouTube Iframe API ready')
     youtube = new YT.Player('player', {
