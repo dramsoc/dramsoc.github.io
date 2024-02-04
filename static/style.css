@@ -68,6 +68,13 @@ p, li, #address {
 #uch {
     background-image: url(images/general/uch2.jpeg);
 }
+#feature {
+    background-image: url("images/shows/romeo_and_juliet.jpeg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+    height: calc(min(500px, 100vw));
+}
 
 /* CONTENT */
 .section {
