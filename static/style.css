@@ -81,7 +81,6 @@ p, li, #address {
     display: flex;
     justify-content: center;
     align-items: center;
-    scroll-margin-top: var(--navbar_height);
     padding: 100px 20px;
 }
 .background_section {
@@ -95,6 +94,9 @@ p, li, #address {
 .plain_section {
     color: var(--primary);
     background-color: var(--plain-background)
+}
+.plain_section, .background_section {
+    scroll-margin-top: var(--navbar_height); /* Ensures does not scroll behind navbar */
 }
 .section_column {
     display: flex;
@@ -244,6 +246,9 @@ button, a {
         width: 100%;
         flex-direction: column;
         top: calc(var(--navbar_height) - var(--nav_buttons_count) * var(--nav_button_height));
+    }
+    #nav_links .nav_button {
+        width: 100%;
     }
     #nav_links.selected {
         top: var(--navbar_height);
