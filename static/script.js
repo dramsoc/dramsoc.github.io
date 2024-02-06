@@ -129,10 +129,8 @@ async function load_shows() {
 async function load_content() {
     await load_committee()
     await load_shows()
-    // document.location.hash = hash
+    document.location.hash = hash
 }
 
-hash = document.location.hash
-document.location.hash = ''
 load_content().then()
 load_youtube_iframe_api()
