@@ -129,6 +129,7 @@ async function load_shows() {
 async function load_content() {
     await load_committee()
     await load_shows()
+    // Scroll to the anchor now that the content is loaded
     document.location.hash = hash
 }
 
