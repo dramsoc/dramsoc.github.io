@@ -125,11 +125,14 @@ async function load_shows() {
     }
 }
 
-function scroll_to_hash() {
-    if (window.location.hash) {
-        // scroll_to(window.location.hash.substring(1))
-    }
+function remove_hash() {
+    hash = document.location.hash
+    document.location.hash = ''
+}
+function add_hash() {
+    document.location.hash = hash
 }
 
+remove_hash()
 load_youtube_iframe_api()
-load_committee().then(load_shows).then(scroll_to_hash)
+load_committee().then(load_shows).then(add_hash)
