@@ -1,8 +1,10 @@
 // Load the YouTube Iframe API
-var player_script = document.createElement('script');
-player_script.src = "https://www.youtube.com/iframe_api";
-var first_script = document.getElementsByTagName('script')[0];
-first_script.parentNode.insertBefore(player_script, first_script);
+function load_youtube_iframe_api() {
+    var player_script = document.createElement('script');
+    player_script.src = "https://www.youtube.com/iframe_api";
+    var first_script = document.getElementsByTagName('script')[0];
+    first_script.parentNode.insertBefore(player_script, first_script);
+}
 
 // Called automatically by player_script when it's ready
 function onYouTubeIframeAPIReady() {
@@ -124,3 +126,4 @@ async function load_shows() {
 
 load_committee().then()
 load_shows().then()
+load_youtube_iframe_api()
