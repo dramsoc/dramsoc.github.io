@@ -127,7 +127,7 @@ async function load_shows() {
 
 function scroll_to_hash() {
     if (window.location.hash) {
-        scroll_to(window.location.hash.substring(1))
+        // scroll_to(window.location.hash.substring(1))
     }
 }
 
