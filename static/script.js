@@ -125,14 +125,14 @@ async function load_shows() {
     }
 }
 
-function remove_hash() {
-    hash = document.location.hash
-    document.location.hash = ''
-}
-function add_hash() {
-    document.location.hash = hash
+// Load the page content
+async function load_content() {
+    await load_committee()
+    await load_shows()
+    // document.location.hash = hash
 }
 
-remove_hash()
+hash = document.location.hash
+document.location.hash = ''
+load_content().then()
 load_youtube_iframe_api()
-load_committee().then(load_shows).then(add_hash)
