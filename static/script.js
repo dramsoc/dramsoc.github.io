@@ -59,6 +59,7 @@ function toggle_nav_links() {
 
 // Scroll to the given content section
 function scroll_to(anchor) {
+    console.log('Scrolling to', anchor)
     document.getElementById(anchor).scrollIntoView()
 
     // Hide the navigation links if presented
@@ -124,9 +125,11 @@ async function load_shows() {
     }
 }
 
-load_committee().then()
-load_shows().then()
-load_youtube_iframe_api()
-if (window.location.hash) {
-    scroll_to(window.location.hash.substring(1))
+function scroll_to_hash() {
+    if (window.location.hash) {
+        scroll_to(window.location.hash.substring(1))
+    }
 }
+
+load_youtube_iframe_api()
+load_committee().then(load_shows).then(scroll_to_hash)
