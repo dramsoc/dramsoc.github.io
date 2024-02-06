@@ -127,3 +127,6 @@ async function load_shows() {
 load_committee().then()
 load_shows().then()
 load_youtube_iframe_api()
+if (window.location.hash) {
+    scroll_to(window.location.hash.substring(1))
+}
