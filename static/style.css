@@ -68,13 +68,6 @@ p, li, #address {
 #uch {
     background-image: url(images/general/uch2.jpeg);
 }
-#feature {
-    background-image: url("images/shows/romeo_and_juliet.jpeg");
-    background-position: center;
-    background-repeat: repeat;
-    background-size: contain;
-    height: calc(min(500px, 100vw));
-}
 
 /* CONTENT */
 .section {
@@ -305,6 +298,21 @@ button, a {
     height: calc(20px + 3vh);
     margin: 50px;
     margin-bottom: 0;
+}
+
+/* FEATURE */
+#feature {
+    background-image: url("images/posters/pecs.jpeg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+    height: calc(min(500px, 100vw));
+    padding: 0px;
+    align-items: end;
+}
+#feature_button {
+    position: relative;
+    bottom: -20px;
 }
 
 /* SHOWS */
