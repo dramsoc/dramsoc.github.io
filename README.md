@@ -15,3 +15,5 @@ GitHub Pages serves html files with their extension removed:
 Redirects are implemented using a single html meta refresh tag.
 
 To change the current committee and recent shows, update static/data/committee.json and static/data/shows.json respectively.
+
+Images in /wp-content are to make sure old links don't break on Horde and email signatures
