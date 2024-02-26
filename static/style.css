@@ -142,7 +142,7 @@ p, li, #address {
     filter: invert();
 }
 .small_logo {
-    height: 70px;
+    height: 75px;
 }
 
 /* BUTTONS */
@@ -220,7 +220,6 @@ button, a {
 .nav_button {
     color: white;
     padding: 0 20px;
-    height: var(--nav_button_height);
     line-height: var(--nav_button_height);
 }
 @media(min-width: 1000px) {

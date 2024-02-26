@@ -16,4 +16,6 @@ Redirects are implemented using a single html meta refresh tag.
 
 To change the current committee and recent shows, update static/data/committee.json and static/data/shows.json respectively.
 
-Images in /wp-content are to make sure old links don't break on Horde and email signatures
+Images in /wp-content are to make sure old image links on Horde and email signatures don't break
+
+CNAME is necessary to link GitHub pages with our dramsoc.org domain
