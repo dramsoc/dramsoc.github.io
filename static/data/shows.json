@@ -1,5 +1,9 @@
 [
     {
+        "title": "Insinuation - Summer Studio 2024",
+        "image": "insinuation.jpeg"
+    },
+    {
         "title": "PECS - Spring Studio 2024",
         "image": "pecs.jpg"
     },
@@ -30,9 +34,5 @@
     {
         "title": "Family Room - Autumn Main 2021",
         "image": "family_room.jpeg"
-    },
-    {
-        "title": "All In Good Time - Spring Main 2019",
-        "image": "all_in_good_time.jpeg"
     }
 ]
