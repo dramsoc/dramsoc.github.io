@@ -2,14 +2,14 @@
     {
         "role": "President",
         "email": "president@dramsoc.org",
-        "name": "Jonah McLeod",
-        "image": "jonah.jpg"
+        "name": "Liberty Wright",
+        "image": "liberty.jpg"
     },
     {
         "role": "Vice President",
         "email": "vice@dramsoc.org",
-        "name": "Ben Meacher",
-        "image": "ben.jpg"
+        "name": "Sophie Reck Pointon",
+        "image": "sophie.jpg"
     },
     {
         "role": "Treasurer",
@@ -18,46 +18,46 @@
         "image": "oliver.jpg"
     },
     {
-        "role": "Honorary Secretary<br>& Social Secretary",
+        "role": "Honorary Secretary",
         "email": "honsec@dramsoc.org",
-        "name": "Sophie Reck Pointon",
-        "image": "sophie.jpg"
+        "name": "Anoushka Nairac",
+        "image": "anoushka.jpg"
     },
     {
         "role": "Technical Director",
         "email": "techdir@dramsoc.org",
-        "name": "Jack Beaumont",
-        "image": "jack_beaumont.jpg"
+        "name": "Pip Moss",
+        "image": "pip.jpg"
     },
     {
         "role": "Acting Director",
         "email": "acting@dramsoc.org",
-        "name": "Dan Cornell",
-        "image": "dan.jpg"
+        "name": "Sid Adaikalaraj",
+        "image": "sid.jpg"
+    },
+    {
+        "role": "Acting Director",
+        "email": "acting@dramsoc.org",
+        "name": "Omar Tahir",
+        "image": "omar.jpg"
     },
     {
         "role": "Lighting Director",
         "email": "lighting@dramsoc.org",
-        "name": "Jarek Ciba",
-        "image": "jarek.jpg"
+        "name": "David Liu",
+        "image": "david.jpg"
     },
     {
         "role": "Sound Director",
         "email": "sound@dramsoc.org",
-        "name": "Josh Henry",
-        "image": "josh.jpg"
+        "name": "Rodriguez",
+        "image": "rodriguez.jpg"
     },
     {
         "role": "Sets, Props & Costumes<br>Director",
         "email": "spc@dramsoc.org",
-        "name": "Liberty Wright",
-        "image": "liberty.jpeg"
-    },
-    {
-        "role": "Systems Administrator",
-        "email": "sysadmin@dramsoc.org",
-        "name": "Pip Moss",
-        "image": "pip.jpg"
+        "name": "Alex Vasilev",
+        "image": "alex.jpeg"
     },
     {
         "role": "Systems Administrator",
@@ -74,14 +74,20 @@
     {
         "role": "Social Secretary",
         "email": "social@dramsoc.org",
-        "name": "Anoushka Nairac",
-        "image": "anoushka.jpg"
+        "name": "Jonah McLeod",
+        "image": "jonah.jpg"
+    },
+    {
+        "role": "Social Secretary",
+        "email": "social@dramsoc.org",
+        "name": "Elana Todd-Miller",
+        "image": "elana.jpg"
     },
     {
         "role": "Ordinary Committee Member",
         "email": "ocm@dramsoc.org",
-        "name": "Elana Todd-Miller",
-        "image": "elana.jpg"
+        "name": "Charlotte Andrews",
+        "image": "charlotte.jpg"
     },
     {
         "role": "Official Mascot",
