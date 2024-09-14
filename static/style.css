@@ -51,6 +51,9 @@ p, li, #address {
 .break {
     flex: 100%;
 }
+img {
+    object-fit: cover;
+}
 
 /* BACKGROUND IMAGES */
 #intro {
@@ -334,7 +337,6 @@ button, a {
 .show_img {
     width: 100%;
     aspect-ratio: 16/9;
-    object-fit: cover;
 }
 .show_title {
     padding: 15px 10px;

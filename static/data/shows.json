@@ -1,5 +1,9 @@
 [
     {
+        "title": "Tycho - Edinburgh Fringe 2024",
+        "image": "tycho.jpeg"
+    },
+    {
         "title": "Insinuation - Summer Studio 2024",
         "image": "insinuation.jpeg"
     },
@@ -30,9 +34,5 @@
     {
         "title": "The Hothouse - Spring Main 2022",
         "image": "the_hothouse.jpg"
-    },
-    {
-        "title": "Family Room - Autumn Main 2021",
-        "image": "family_room.jpeg"
     }
 ]

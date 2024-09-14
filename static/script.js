@@ -79,7 +79,7 @@ async function load_committee() {
 
         var image = document.createElement('img')
         image.classList.add('headshot')
-        image.src = 'static/images/committee/' + member.image
+        image.src = 'static/images/committee/24/' + member.image
         member_div.appendChild(image)
 
         var info_div = document.createElement('div')
