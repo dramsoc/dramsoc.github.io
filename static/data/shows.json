@@ -1,5 +1,9 @@
 [
     {
+        "title": "The Waters of March - October Show 2024",
+        "image": "waters_of_march.jpeg"
+    },
+    {
         "title": "Tycho - Edinburgh Fringe 2024",
         "image": "tycho.jpeg"
     },
@@ -30,9 +34,5 @@
     {
         "title": "Earthquakes In London - Spring Main 2023",
         "image": "earthquakes_in_london.jpg"
-    },
-    {
-        "title": "The Hothouse - Spring Main 2022",
-        "image": "the_hothouse.jpg"
     }
 ]
