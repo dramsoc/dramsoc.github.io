@@ -48,9 +48,6 @@ ul {
 p, li, #address {
     line-height: 1.75rem;
 }
-.break {
-    flex: 100%;
-}
 img {
     object-fit: cover;
 }
