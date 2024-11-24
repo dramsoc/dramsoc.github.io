@@ -15,6 +15,7 @@
         <script src="/static/script.js?v=1"></script>
 
         <!-- Stop the page from scrolling to the anchor on load -->
+        <!-- This is a workaround needed to get #talk to scroll to mailing lists after recent shows have loaded -->
         <script>
             hash = document.location.hash
             document.location.hash = ''
@@ -78,12 +79,12 @@
         <!-- FEATURE -->
         <!-- This section can be used to advertise upcoming shows -->
         <!-- It displays the show's poster and a link to buy tickets -->
-        <div id="feature" class="section" style="background-image: url('/static/images/posters/wyrd_sisters.jpg');">
+        <!-- <div id="feature" class="section" style="background-image: url('/static/images/posters/wyrd_sisters.jpg');">
             <a id="feature_button" class="large_button" href="/tickets" target="_blank">
                 <img aria-hidden="true" class="icon" src="/static/images/symbols/ticket.png">
                 Tickets
             </a>
-        </div>
+        </div> -->
 
         <!-- ABOUT -->
         <div id="about" class="section plain_section">

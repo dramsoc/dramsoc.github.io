@@ -1,11 +1,16 @@
 [
     {
+        "title": "Wyrd Sisters - Autumn Main 2024",
+        "image": "wyrd_sisters.jpeg"
+    },
+    {
         "title": "The Waters of March - October Show 2024",
         "image": "waters_of_march.jpeg"
     },
     {
         "title": "Tycho - Edinburgh Fringe 2024",
-        "image": "tycho.jpeg"
+        "image": "tycho.jpeg",
+        "url": "https://www.thespaceuk.com/shows/2024/tycho-mankind-s-first-hotel-on-the-moon"
     },
     {
         "title": "Insinuation - Summer Studio 2024",
@@ -34,5 +39,13 @@
     {
         "title": "Earthquakes In London - Spring Main 2023",
         "image": "earthquakes_in_london.jpg"
+    },
+    {
+        "title": "The Hothouse - Spring Main 2022",
+        "image": "the_hothouse.jpg"
+    },
+    {
+        "title": "Family Room - Autumn Main 2021",
+        "image": "family_room.jpeg"
     }
 ]

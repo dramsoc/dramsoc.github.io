@@ -1,8 +1,8 @@
 // Load the YouTube Iframe API
 function load_youtube_iframe_api() {
-    var player_script = document.createElement('script');
+    player_script = document.createElement('script');
     player_script.src = "https://www.youtube.com/iframe_api";
-    var first_script = document.getElementsByTagName('script')[0];
+    first_script = document.getElementsByTagName('script')[0];
     first_script.parentNode.insertBefore(player_script, first_script);
 }
 
@@ -49,7 +49,7 @@ function on_player_state_change(state) {
 function toggle_nav_links() {
     nav_links.classList.add('transition')
     nav_links.classList.toggle('selected')
-    nav_menu_img.src = nav_links.classList.contains('selected') ? 'static/images/symbols/xmark.png' : 'static/images/symbols/line.3.horizontal.png'
+    nav_menu_img.src = nav_links.classList.contains('selected') ? '/static/images/symbols/xmark.png' : '/static/images/symbols/line.3.horizontal.png'
 
     // Stop animating the navigation links
     setTimeout(function() {
@@ -70,29 +70,29 @@ function scroll_to(anchor) {
 
 // Load the committee members from the JSON file
 async function load_committee() {
-    var response = await fetch('static/data/committee.json')
-    var committee = await response.json()
+    response = await fetch('/static/data/committee.json')
+    committee = await response.json()
     
     for (member of committee) {
-        var member_div = document.createElement('div')
+        member_div = document.createElement('div')
         member_div.classList.add('content_item')
 
-        var image = document.createElement('img')
+        image = document.createElement('img')
         image.classList.add('headshot')
-        image.src = 'static/images/committee/24/' + member.image
+        image.src = '/static/images/committee/24/' + member.image
         member_div.appendChild(image)
 
-        var info_div = document.createElement('div')
-        var name = document.createElement('h2')
-        name.innerHTML = member.name
-        info_div.appendChild(name)
+        info_div = document.createElement('div')
+        name_title = document.createElement('h2')
+        name_title.innerHTML = member.name
+        info_div.appendChild(name_title)
 
-        var role = document.createElement('p')
+        role = document.createElement('p')
         role.classList.add('committee_role')
         role.innerHTML = member.role
         info_div.appendChild(role)
 
-        var email = document.createElement('a')
+        email = document.createElement('a')
         email.href = 'mailto:' + member.email
         email.innerHTML = member.email
 
@@ -104,19 +104,25 @@ async function load_committee() {
 
 // Load the shows from the JSON file
 async function load_shows() {
-    var response = await fetch('static/data/shows.json')
-    var shows = await response.json()
+    response = await fetch('/static/data/shows.json')
+    shows = await response.json()
     
     for (show of shows) {
-        var show_div = document.createElement('div')
+        if (show.url) {
+            show_div = document.createElement('a')
+            show_div.href = show.url
+            show_div.target = '_blank'
+        } else {
+            show_div = document.createElement('div')
+        }
         show_div.classList.add('show')
 
-        var image = document.createElement('img')
+        image = document.createElement('img')
         image.classList.add('show_img')
-        image.src = 'static/images/shows/' + show.image
+        image.src = '/static/images/shows/' + show.image
         show_div.appendChild(image)
 
-        var title = document.createElement('h4')
+        title = document.createElement('h4')
         title.classList.add('show_title')
         title.innerHTML = show.title
         show_div.appendChild(title)
