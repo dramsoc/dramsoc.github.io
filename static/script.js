@@ -107,7 +107,7 @@ async function load_shows() {
     response = await fetch('/static/data/shows.json')
     shows = await response.json()
     
-    for (show of shows) {
+    for (show of shows.slice(0, 12)) {
         if (show.url) {
             show_div = document.createElement('a')
             show_div.href = show.url
