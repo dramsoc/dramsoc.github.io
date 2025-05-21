@@ -51,6 +51,9 @@ p, li, #address {
 img {
     object-fit: cover;
 }
+.secondary {
+    color: var(--secondary);
+}
 
 /* BACKGROUND IMAGES */
 #intro {
