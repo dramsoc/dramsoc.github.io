@@ -70,35 +70,89 @@ function scroll_to(anchor) {
 
 // Load the committee members from the JSON file
 async function load_committee() {
-    response = await fetch('/static/data/committee.json')
-    committee = await response.json()
+
+    // ***********************************************
+    // on committee changeover - change variables below
+    const year = "25"; // image locations
+    // ***********************************************
+
+    const response = await fetch('/static/data/committee.json')
+    const committee = await response.json()
     
     for (member of committee) {
-        member_div = document.createElement('div')
-        member_div.classList.add('content_item')
+        let element = document.createElement("div");
+        element.className = "content_item";
+        element.innerHTML = `
+            <div class="headshot">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
+                </svg>
+                <div class="headshot-image" style="background-image:url(/static/images/committee/24/sophie.jpg);"></div>
+            </div>
+            <div class="member_text">
+                <h2>Committee Member</h2>
+                <p class="committee_role">a role</p>
 
-        image = document.createElement('img')
-        image.classList.add('headshot')
-        image.src = '/static/images/committee/24/' + member.image
-        member_div.appendChild(image)
+                <a href="mailto:no@dramsoc.org">no@dramsoc.org</a>
+            </div>
+        `;
 
-        info_div = document.createElement('div')
-        name_title = document.createElement('h2')
-        name_title.innerHTML = member.name
-        info_div.appendChild(name_title)
+        console.log("here");
+        console.log(element.querySelector(".headshot-image"));
 
-        role = document.createElement('p')
-        role.classList.add('committee_role')
-        role.innerHTML = member.role
-        info_div.appendChild(role)
+        // image
+        element.querySelector(".headshot-image").style.backgroundImage = `url(/static/images/committee/${encodeURIComponent(year)}/${encodeURIComponent(member.image)})`;
+        
+        // name
+        element.querySelector("h2").textContent = member.name;
 
-        email = document.createElement('a')
-        email.href = 'mailto:' + member.email
-        email.innerHTML = member.email
+        // role
+        if (Array.isArray(member.role)) {
+            let roleElement = element.querySelector(".committee_role");
+            roleElement.textContent = "";
 
-        info_div.appendChild(email)
-        member_div.appendChild(info_div)
-        committee_grid.appendChild(member_div)
+            member.role.forEach((x, i) => {
+                let roleSpan = document.createElement("span");
+                roleSpan.textContent = x;
+                roleElement.append(roleSpan);
+
+                if (i != member.role.length - 1) {
+                    let dividerSpan = document.createElement("span");
+                    dividerSpan.style.opacity = 0.6;
+                    dividerSpan.textContent = " / ";
+                    roleElement.append(dividerSpan);
+                }
+            });
+        } else element.querySelector(".committee_role").textContent = member.role;
+
+        // email
+        if (Array.isArray(member.email)) {
+            let emailElement = element.querySelector("a");
+            let emailParent = emailElement.parentElement;
+            emailElement.remove();
+
+            member.email.forEach((x, i, a) => {
+                emailElement = document.createElement("a");
+                emailElement.href = `mailto:${x}`;
+                emailElement.textContent = x;
+
+                emailParent.append(emailElement);
+
+                if (i != a.length - 1) {
+                    emailElement.style.lineHeight = "24px";
+                    let breakElement = document.createElement("br");
+                    emailParent.append(breakElement);
+                }
+            })
+        } else {
+            let a = element.querySelector("a");
+            a.href = `mailto:${member.email}`;
+            a.textContent = member.email;
+        }
+
+        // info_div.appendChild(email)
+        // member_div.appendChild(info_div)
+        committee_grid.appendChild(element);
     }
 }
 

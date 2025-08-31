@@ -1,3 +1,10 @@
 .DS_Store
 venv
 .vscode
+
+# python test server
+bin/
+include/
+lib/
+lib64/
+pyvenv.cfg

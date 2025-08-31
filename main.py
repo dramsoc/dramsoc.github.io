@@ -17,4 +17,4 @@ def policy():
 def tickets():
     return render_template('tickets.html')
 
-app.run(host='0.0.0.0')
+app.run(host='0.0.0.0', debug=True)
