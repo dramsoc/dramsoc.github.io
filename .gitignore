@@ -3,4 +3,4 @@ venv
 .vscode
 
 # test server
-./pyvenv.cfg
+pyvenv.cfg
