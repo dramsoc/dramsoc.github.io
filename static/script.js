@@ -72,8 +72,8 @@ function scroll_to(anchor) {
 async function load_committee() {
 
     // ***********************************************
-    // on committee changeover - change variables below
-    const year = "25"; // image locations
+    // on committee changeover - change variable(s) below
+    const year = "25"; // image locations (ends up at /static/images/committee/{year}/)
     // ***********************************************
 
     const response = await fetch('/static/data/committee.json')
