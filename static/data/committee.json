@@ -3,67 +3,67 @@
         "role": "President",
         "email": "president@dramsoc.org",
         "name": "Alex Vasilev",
-        "image": "alex.png"
+        "image": "alex.jpg"
     },
     {
         "role": "Vice President",
         "email": "vice@dramsoc.org",
         "name": "Valerie Locher",
-        "image": "valerie.png"
+        "image": "valerie.jpg"
     },
     {
         "role": "Treasurer",
         "email": "treasurer@dramsoc.org",
         "name": "David Liu",
-        "image": "david.png"
+        "image": "david.jpg"
     },
     {
         "role": "Honorary Secretary",
         "email": "honsec@dramsoc.org",
         "name": "Jonah McLeod",
-        "image": "jonah.png"
+        "image": "jonah.jpg"
     },
     {
         "role": "Technical Director",
         "email": "techdir@dramsoc.org",
         "name": "Pip Moss",
-        "image": "pip.png"
+        "image": "pip.jpg"
     },
     {
         "role": "Acting Director",
         "email": "acting@dramsoc.org",
         "name": "Charlotte Andrews",
-        "image": "charlotte.png"
+        "image": "charlotte.jpg"
     },
     {
         "role": "Lighting Director",
         "email": "lighting@dramsoc.org",
         "name": "Caden Wong",
-        "image": "caden.png"
+        "image": "caden.jpg"
     },
     {
         "role": "Sound Director",
         "email": "charlie.png",
         "name": "Charlie Theobald",
-        "image": "charlie.png"
+        "image": "charlie.jpg"
     },
     {
-        "role": "Set, Props & Costumes Director",
+        "role": "Set & Props Director",
         "email": "spc@dramsoc.org",
         "name": "Liberty Wright",
-        "image": "liberty.png"
+        "image": "liberty.jpg"
     },
     {
-        "role": "Set, Props & Costumes Director",
+        "role": "Costumes & Makeup Director",
         "email": "spc@dramsoc.org",
         "name": "Jocelyn Yue",
-        "image": "liberty.png"
+        "image": "jocelyn.jpg"
     },
     {
         "role": "Systems Administrator",
         "email": "sysadmin@dramsoc.org",
         "name": "George Robertson",
-        "image": "george.png"
+        "image": "george.jpg"
     },
     {
         "role": [
@@ -75,19 +75,19 @@
             "social@dramsoc.org"
         ],
         "name": "Begüm Yener",
-        "image": "begum.png"
+        "image": "begum.jpg"
     },
     {
         "role": "Social Secretary",
         "email": "social@dramsoc.org",
         "name": "Tim Spawforth",
-        "image": "tim.png"
+        "image": "tim.jpg"
     },
     {
         "role": "Ordinary Committee Member",
         "email": "ocm@dramsoc.org",
         "name": "Ollie Ainsworth-Parker",
-        "image": "ollie.png"
+        "image": "ollie.jpg"
     },
     {
         "role": "Official Mascot",
