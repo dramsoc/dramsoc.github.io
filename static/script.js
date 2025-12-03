@@ -166,6 +166,7 @@ async function load_shows() {
             show_div = document.createElement('a')
             show_div.href = show.url
             show_div.target = '_blank'
+            if (show.tooltip) show_div.title = show.tooltip;
         } else {
             show_div = document.createElement('div')
         }
