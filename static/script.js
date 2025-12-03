@@ -97,9 +97,6 @@ async function load_committee() {
             </div>
         `;
 
-        console.log("here");
-        console.log(element.querySelector(".headshot-image"));
-
         // image
         element.querySelector(".headshot-image").style.backgroundImage = `url(/static/images/committee/${encodeURIComponent(year)}/${encodeURIComponent(member.image)})`;
         
@@ -166,11 +163,11 @@ async function load_shows() {
             show_div = document.createElement('a')
             show_div.href = show.url
             show_div.target = '_blank'
-            if (show.tooltip) show_div.title = show.tooltip;
         } else {
             show_div = document.createElement('div')
         }
         show_div.classList.add('show')
+        if (show.tooltip) show_div.title = show.tooltip;
 
         image = document.createElement('img')
         image.classList.add('show_img')
