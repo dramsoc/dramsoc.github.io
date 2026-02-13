@@ -66,6 +66,12 @@
         "image": "george.jpg"
     },
     {
+        "role": "Social Secretary",
+        "email": "social@dramsoc.org",
+        "name": "Elana Todd-Miller",
+        "image": "elana.jpg"
+    },
+    {
         "role": [
             "Publicity Officer",
             "Social Secretary"
