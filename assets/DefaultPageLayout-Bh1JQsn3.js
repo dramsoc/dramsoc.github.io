@@ -1,0 +1,1 @@
+import{n as e,o as t,t as n}from"./jsx-runtime-D5XB8Qto.js";import{t as r}from"./DefaultPageLayoutComponent-qI55D8Vl.js";var i=n(),a=t(function(){return(0,i.jsx)(r,{children:(0,i.jsx)(e,{})})});export{a as default};

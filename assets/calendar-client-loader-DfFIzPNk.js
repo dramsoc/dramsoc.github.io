@@ -1,0 +1,1 @@
+import{E as e}from"./utils-ClvgYzxi.js";async function t({}){throw e(`//outlook.office365.com/owa/calendar/67f72540d8e24159bd72cf807716dc86@imperial.ac.uk/82262ebe17ff4419a97649dd90fd85ed6387450589728315788/calendar.html`)}export{t as clientLoader};
