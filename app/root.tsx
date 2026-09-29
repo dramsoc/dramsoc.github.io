@@ -31,6 +31,13 @@ export function Layout({ children }: { children: React.ReactNode; }) {
             <head>
                 <meta charSet="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta name="description" content="Imperial College Dramatic Society" />
+                <meta property="og:type" content="website" />
+                <meta property="og:description" content="Imperial College Dramatic Society" />
+                <meta property="og:image" content="/assets/img/events/summer_ball1.jpg" />
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:description" content="Imperial College Dramatic Society" />
+                <meta property="twitter:image" content="/assets/img/events/summer_ball1.jpg" />
                 <Meta />
                 <Links />
 
