@@ -47,9 +47,9 @@ export const MR1Page = (): ReactNode => {
                     >
                         <li>
                             going through the main entrance to the Union Building, going through the
-                            door on your left into 568, going straight across the room and through
+                            door on your right into 568, going straight across the room and through
                             the doors marked "The Union Bar", then going through the doors on your
-                            left, or
+                            right and then left, or
                         </li>
                         <li>
                             going through the set of doors in the northeastenmost corner of the quad
