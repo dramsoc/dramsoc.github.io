@@ -59,7 +59,7 @@ export const UCHPage = (): ReactNode => {
                     Video
                 </h3>
                 <iframe
-                    src="https://www.youtube.com/embed/mw45NQwkrCw"
+                    src="https://www.youtube-nocookie.com/embed/mw45NQwkrCw"
                     title="Directions to the UCH"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
