@@ -6,7 +6,7 @@ import { Hero } from "~/components/dramsoc/hero/Hero";
 import { DramSoc } from "~/components/dramsoc/logo/DramSoc";
 import { Avatar, AvatarImage, AvatarFallback } from "~/components/ui/avatar";
 import { Button } from "~/components/ui/button";
-import { Card, CardHeader, CardTitle } from "~/components/ui/card";
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "~/components/ui/card";
 import { committee, committeeYearHeader } from "~/data/committee";
 import { recentShows } from "~/data/recentShows";
 
@@ -32,7 +32,7 @@ const SectionContainer = ({ id, children }: PropsWithChildren<{ id?: string; }>)
     );
 };
 
-export const Landing = (): ReactNode => {
+export const LandingPage = (): ReactNode => {
     return (
         <>
             <Hero
@@ -56,6 +56,68 @@ export const Landing = (): ReactNode => {
             <main
                 className="*:scroll-m-[66px] sm:*:scroll-m-[91px]"
             >
+                {/* looks bad and is very temp */}
+                <SectionContainer>
+                    <Card
+                        className="w-full"
+                    >
+                        <CardHeader>
+                            <SectionHeader>
+                                Welcome Week
+                            </SectionHeader>
+                        </CardHeader>
+                        <CardContent
+                            className="text-lg text-left"
+                        >
+                            <p>
+                                Hello new people! We're running a whole host of events for incoming
+                                students over the next 2 weeks - check out our Instagram (
+                                <Link
+                                    to="//instagram.com/ic_dramsoc"
+                                    className="text-blue-300"
+                                    target="_blank"
+                                >
+                                    @ic_dramsoc
+                                </Link>
+                                ) for a full list of all the things we're running and details on
+                                how to get involved.
+                            </p>
+                            <p>
+                                If you have any questions then feel free to{" "}
+                                <Link
+                                    to="#contact"
+                                    className="text-blue-300"
+                                >
+                                    get in touch
+                                </Link>
+                                {" "} - we're more than happy to answer any questions you have.
+                            </p>
+                        </CardContent>
+                        <CardFooter>
+                            <Link
+                                to="//welcome-fair-map.imperialcollegeunion.org/map"
+                                target="_blank"
+                            >
+                                <div
+                                    className="flex items-center gap-4 justify-center"
+                                >
+                                    <div
+                                        className="bg-cover min-w-25 bg-center size-25 inline-block"
+                                        style={{
+                                            backgroundImage: "url(/assets/img/misc/W26_Lockup_NoColour.png)"
+                                        }}
+                                    />
+                                    <h4
+                                        className="text-2xl text-start"
+                                    >
+                                        Come find us at stall 136 in the Arts & Entertainments section
+                                        at the Welcome Fair!
+                                    </h4>
+                                </div>
+                            </Link>
+                        </CardFooter>
+                    </Card>
+                </SectionContainer>
                 <SectionContainer>
                     <SectionHeader>
                         Welcome to DramSoc, Imperial's Dramatic Society!
@@ -255,7 +317,7 @@ export const Landing = (): ReactNode => {
                         </SectionHeader>
                         <p>
                             DramSoc's primary venue is the Imperial College Union Union Concert Hall
-                            (or UCH for short). It was build in the 1950s, opening along with the rest
+                            (or UCH for short). It was built in the 1950s, opening along with the rest
                             of the upper part of the Union building in 1956. DramSoc is responsible for
                             the maintenance of the technical aspects of the hall, and it contains a
                             fully-featured stage and technical installation.

@@ -5,7 +5,7 @@ import BaseLayoutComponent from "~/components/dramsoc/layouts/BaseLayoutComponen
 import DefaultPageLayoutComponent from "~/components/dramsoc/layouts/DefaultPageLayoutComponent";
 import FooterPositionerComponent from "~/components/dramsoc/layouts/FooterPositionerComponent";
 
-export const Error404 = (): ReactNode => {
+export const Error404Page = (): ReactNode => {
     return (
         <BaseLayoutComponent>
             <FooterPositionerComponent>

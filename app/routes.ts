@@ -4,7 +4,9 @@ export default [
     layout("layouts/BaseLayout.tsx", [
         layout("layouts/FooterPositioner.tsx", [
             layout("layouts/DefaultPageLayout.tsx", [
-                index("routes/landing.tsx")
+                index("routes/landing.tsx"),
+                route("uch", "routes/uch.tsx"),
+                route("mr1", "routes/mr1.tsx")
             ])
         ])
     ]),

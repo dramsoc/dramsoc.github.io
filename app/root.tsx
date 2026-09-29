@@ -10,7 +10,7 @@ import {
 import type { Route } from "./+types/root";
 import "./app.css";
 import { ThemeProvider } from "./components/ThemeProvider";
-import { Error404 } from "./pages/404";
+import { Error404Page } from "./pages/404";
 
 export const links: Route.LinksFunction = () => [
     { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -81,7 +81,7 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
 
     if (isRouteErrorResponse(error)) {
         return (
-            <Error404 />
+            <Error404Page />
         );
     } else if (import.meta.env.DEV && error && error instanceof Error) {
         details = error.message;
