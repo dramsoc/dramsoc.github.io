@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-D5XB8Qto.js";var t=e(),n=({id:e,className:n,children:r})=>(0,t.jsx)(`div`,{className:`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full ${n}`,id:e,children:r});export{n as t};
