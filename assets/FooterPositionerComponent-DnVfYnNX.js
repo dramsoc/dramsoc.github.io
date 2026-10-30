@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-BqcmEoG_.js";var t=e();function n({children:e}){return(0,t.jsx)(`div`,{className:`flex flex-col justify-between min-h-screen`,children:e})}export{n as t};

@@ -1,0 +1,1 @@
+import{E as e}from"./utils-DleVU_Kr.js";async function t({}){throw e(`//www.imperialcollegeunion.org/activities/a-to-z/dramsoc`)}export{t as clientLoader};

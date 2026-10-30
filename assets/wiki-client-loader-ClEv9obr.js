@@ -1,1 +1,0 @@
-import{E as e}from"./utils-ClvgYzxi.js";async function t({}){throw e(`//wiki.dramsoc.org`)}export{t as clientLoader};

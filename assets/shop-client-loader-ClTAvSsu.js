@@ -1,0 +1,1 @@
+import{E as e}from"./utils-DleVU_Kr.js";async function t({}){throw e(`//www.imperialcollegeunion.org/student-group-shop?groupId=130`)}export{t as clientLoader};
